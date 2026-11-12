@@ -4,7 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schreinerei Meier</title>
-    <link rel="stylesheet" href="formate.css">
+	<style>
+
+	body {
+	background-image: url(img/istockphoto-1417433518-612x612.jpg);
+	}
+	
+	h1 { 
+	color:rgb(92, 70, 23);
+	background-color: rgb(255, 184, 52);
+	font-size: 2.5em;
+	border: thin solid;
+	border-radius: 0 1em 1em 1em;
+	padding: 0.5em;
+	}		
+
+	h2 { 
+	color: rgb(92, 70, 23);
+	background-color: rgb(255, 184, 52);
+	font-size: 1.9em;
+	border: thin solid;
+	}		
+	
+	li {
+    color: #8B4513;
+    font-size: 1.3rem;
+	}
+
+	a {
+		color: #800000;
+		font-size: 1em;
+	}
+
+	p {
+		color: #8B4513;
+		font-size: 1.3rem;
+	}
+	</style>
 </head>
 <body>
 
@@ -13,10 +49,9 @@
         </h1>
 
         <ul>
-            <li><a tabindex="0" aria-current="page">Startseite</a></li>
+            <li><a href="index">Startseite</a></li>
             <li><a href="inhalt.html">Bilder von unseren Produkten</a></li>
             <li><a href="preise.html">Unsere Preise</a></li>
-            <li><a href="kontakt.html">Kontakt und Impressum</a></li>
         </ul>
 
         <p>
@@ -25,7 +60,7 @@
 
         <p>
         Wir sind seit vielen Jahren darauf spezialisiert, alle Kundenwünsche zu erfüllen. In unserer
-        Werkstatt produzieren wir selbst &ndash; mit Holz aus regionaler, nachhaltiger Forstwirtschaft.
+        Werkstatt produzieren wir selbst & mit Holz aus regionaler, nachhaltiger Forstwirtschaft.
         </p>
 
         <h2>
@@ -58,28 +93,6 @@
         Nachfolger ein.
         </p>
 
-        <img src="img/image-removebg-preview.png"
-        alt="Ein animiertes GIF"
-        onclick="bildGeklickt(this)"
-        style="cursor: pointer; max-width: 100%;">
-
-        <script>
-        function bildGeklickt(bild)
-            {
-            alert('Sägerich wurde Geklickt');
-
-            bild.src = 'img/file1.gif';
-
-            var sound = new Audio('img/sou/ringtone_25.mp3');
-            sound.play();
-
-            sound.addEventListener('ended', function () {
-                bild.src = "img/image-removebg-preview.png";
-            });
-            }
-        </script>
-
-        <h3 style="color:#7B68EE;">Sägerich: hallllo</h3>
 
   </body>
 </html>
