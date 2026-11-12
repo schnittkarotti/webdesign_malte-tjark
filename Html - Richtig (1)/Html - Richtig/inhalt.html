@@ -8,6 +8,7 @@
 
 	body {
 	background-image: url(img/istockphoto-1417433518-612x612.jpg);
+    background-size: cover;
 	}
 	
 	h1 { 
@@ -40,6 +41,25 @@
 		color: #8B4513;
 		font-size: 1.3rem;
 	}
+
+    .dropdown{
+    color: black;
+    font-size: 20px;
+    position: relative;
+    }
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    }
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    
 	</style>
 </head>
 
@@ -58,15 +78,29 @@
         Hier sehen Sie einen Überblick über unsere Angebote:
     </p>
 
-    <img src="img/cabinet.svg" alt="Kommode" width="200" height="200">
-    <img src="img/dresser.svg" alt="Kommode mit Schubladen" width="200" height="200">
-    <img src="img/filing-cabinet.svg" alt="Aktenschrank" width="200" height="200">
-    <img src="img/table.svg" alt="Schreibtisch" width="200" height="200">
-
-    <img src="img/cupboard.svg" alt="Schrank" width="500" height="500">
-    <img src="img/bed-modern.svg" alt="Modernes Bett für 2 Personen" width="500" height="500">
-    <img src="img/chair.svg" alt="Stuhl aus Vollholz" width="500" height="500">
-    <img src="img/desk.svg" alt="Schreibtisch mit Unterschrank" width="500" height="500">
-
+    <li><div class="dropdown">Kommoden
+        <div class="dropdown-content">
+        <img src="img/cabinet.svg" alt="Kommode" width="200" height="200">
+        <img src="img/dresser.svg" alt="Kommode mit Schubladen" width="200" height="200">
+        </div>
+    </div></li>
+    <li><div class="dropdown">Tische
+        <div class="dropdown-content">
+        <img src="img/table.svg" alt="Schreibtisch" width="200" height="200">
+        <img src="img/desk.svg" alt="Schreibtisch mit Unterschrank" width="500" height="500">
+        </div>
+    </div></li>
+    <li><div class="dropdown">Stühle
+        <div class="dropdown-content">
+        <img src="img/cupboard.svg" alt="Schrank" width="500" height="500">
+        <img src="img/filing-cabinet.svg" alt="Aktenschrank" width="200" height="200">
+        </div>
+    </div></li>
+    <li><div class="dropdown">Diverses
+        <div class="dropdown-content">
+        <img src="img/bed-modern.svg" alt="Modernes Bett für 2 Personen" width="500" height="500">
+        <img src="img/chair.svg" alt="Stuhl aus Vollholz" width="500" height="500">
+        </div>
+    </div></li>
 </body>
 </html>
