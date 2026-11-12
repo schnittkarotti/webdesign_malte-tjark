@@ -42,23 +42,42 @@
 		font-size: 1.3rem;
 	}
 
-    .dropdown{
-    color: black;
-    font-size: 20px;
-    position: relative;
-    }
-    .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 130px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    .dropdown {
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      color: black;
+      font-size: 20px;
+      margin-bottom: 10px;
     }
 
-    .dropdown:hover .dropdown-content {
-    display: block;
+    .dropdown summary {
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
     }
+
+    .dropdown summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .dropdown-content {
+      display: block;
+      background-color: #f9f9f9;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 10;
+      white-space: nowrap;
+      margin-top: 8px;
+    }
+
+    .dropdown-content img {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .product-categories { 
+    text-align: center; }
     
 	</style>
 </head>
@@ -78,29 +97,41 @@
         Hier sehen Sie einen Überblick über unsere Angebote:
     </p>
 
-    <li><div class="dropdown">Kommoden
-        <div class="dropdown-content">
-        <img src="img/cabinet.svg" alt="Kommode" width="200" height="200">
-        <img src="img/dresser.svg" alt="Kommode mit Schubladen" width="200" height="200">
-        </div>
-    </div></li>
-    <li><div class="dropdown">Tische
-        <div class="dropdown-content">
-        <img src="img/table.svg" alt="Schreibtisch" width="200" height="200">
-        <img src="img/desk.svg" alt="Schreibtisch mit Unterschrank" width="500" height="500">
-        </div>
-    </div></li>
-    <li><div class="dropdown">Stühle
-        <div class="dropdown-content">
-        <img src="img/cupboard.svg" alt="Schrank" width="500" height="500">
-        <img src="img/filing-cabinet.svg" alt="Aktenschrank" width="200" height="200">
-        </div>
-    </div></li>
-    <li><div class="dropdown">Diverses
-        <div class="dropdown-content">
-        <img src="img/bed-modern.svg" alt="Modernes Bett für 2 Personen" width="500" height="500">
-        <img src="img/chair.svg" alt="Stuhl aus Vollholz" width="500" height="500">
-        </div>
-    </div></li>
+    <div class="product-categories">
+        <details class="dropdown">
+            <summary>Kommoden</summary>
+            <div class="dropdown-content">
+                <img src="img/cabinet.svg" alt="Kommode" width="200" height="200">
+                <img src="img/dresser.svg" alt="Kommode mit Schubladen" width="200" height="200">
+            </div>
+        </details>
+    </div>
+    <div class="product-categories">
+        <details class="dropdown">
+            <summary>Tische</summary>
+            <div class="dropdown-content">
+                <img src="img/table.svg" alt="Schreibtisch" width="200" height="200">
+                <img src="img/desk.svg" alt="Schreibtisch mit Unterschrank" width="500" height="500">
+            </div>
+        </details>
+    </div>
+    <div class="product-categories">
+        <details class="dropdown">
+            <summary>Stühle</summary>
+            <div class="dropdown-content">
+                <img src="img/cupboard.svg" alt="Schrank" width="500" height="500">
+                <img src="img/filing-cabinet.svg" alt="Aktenschrank" width="200" height="200">
+            </div>
+        </details>
+    </div>
+    <div class="product-categories">
+        <details class="dropdown">
+            <summary>Diverses</summary>
+            <div class="dropdown-content">
+                <img src="img/bed-modern.svg" alt="Modernes Bett für 2 Personen" width="500" height="500">
+                <img src="img/chair.svg" alt="Stuhl aus Vollholz" width="500" height="500">
+            </div>
+        </details>
+    </div>
 </body>
 </html>
