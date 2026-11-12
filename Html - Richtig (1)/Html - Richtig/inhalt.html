@@ -1,0 +1,64 @@
+<!doctype html>
+<!-- Dokumenttyp: sagt dem Browser dass die Seite in HTML5 geschrieben ist -->
+
+<html lang="de">
+<!-- <html> lang="de" legt die Sprache Deutsch fest -->
+
+<head>
+<!-- <head> enthält Infos über die Seite, die nicht direkt angezeigt werden sollen -->
+    
+	<meta charset="utf-8">
+    <!-- charset="utf-8" damit Umlaute und Sonderzeichen richtig angezeigt werden -->
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Anpassung der Seite an die Bildschirmbreite -->
+    
+	<title>Bilder von unseren Produkten</title>
+    <!-- <title> ist der Text im Browser-Tab -->
+
+	<link rel="stylesheet" href="formate.css">
+	<!-- <link> bindet die externe CSS-Datei ein: Das Aussehen wird für alle Seiten zentral festgelegt -->
+	
+</head>
+
+<body>
+<!-- <body> enthält alles, was auf der Seite sichtbar ist -->
+
+	<!-- UNGEORDNETE LISTE: <ul> erzeugt eine Liste mit Punkten,
+	     jeder Eintrag steht in einem <li> (list item).
+	     <a href="..."> erzeugt einen Link zu einer anderen Seite. -->
+	<ul>
+		<li><a href="index.html">Startseite</a></li>
+		<li><a tabindex="0" aria-current="page">Bilder von unseren Produkten</a></li>	<!-- Bilder ohne href, weil man sich gerade auf dieser Seite befindet -->
+		<li><a href="preise.html">Unsere Preise</a></li>
+		<li><a href="kontakt.html">Kontakt und Impressum</a></li>
+	</ul>
+
+	<!-- ÜBERSCHRIFT 1. EBENE: <h1> ist die wichtigste und größte Überschrift -->
+	<h1>
+		Unsere Produkte
+	</h1>
+
+	<!-- ABSATZ: <p> erzeugt einen Textabsatz -->
+	<p>
+		Hier sehen Sie einen Überblick über unsere Angebote:
+	</p>
+
+	<!-- BILDER: <img> bindet ein Bild ein (kein End-Tag nötig).
+	     src    = Pfad zur Bilddatei (hier SVG-Grafiken im Ordner img)
+	     alt    = Ersatztext, falls das Bild nicht lädt (auch für Screenreader)
+	     width  = Breite in Pixeln
+	     height = Höhe in Pixeln -->
+	<img src="img/cabinet.svg" alt="Kommode" width="200" height="200">
+	<img src="img/dresser.svg" alt="Kommode mit Schubladen" width="200" height="200">
+	<img src="img/filing-cabinet.svg" alt="Aktenschrank" width="200" height="200">
+	<img src="img/table.svg" alt="Schreibtisch" width="200" height="200">
+
+	<!-- Die größeren Möbelstücke werden mit 500 x 500 Pixeln angezeigt -->
+	<img src="img/cupboard.svg" alt="Schrank" width="500" height="500">
+	<img src="img/bed-modern.svg" alt="Modernes Bett für 2 Personen" width="500" height="500">
+	<img src="img/chair.svg" alt="Stuhl aus Vollholz" width="500" height="500">
+	<img src="img/desk.svg" alt="Schreibtisch mit Unterschrank" width="500" height="500">
+
+</body>
+</html>

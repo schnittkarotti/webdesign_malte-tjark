@@ -1,0 +1,37 @@
+/* formate.css: gemeinsames Aussehen für alle Seiten */
+body {
+	background-color:#FFEFD5; /* Hintergrundfarbe der ganzen Seite (hellorange) */
+	}
+	
+	h1 { 
+	color:rgb(92, 70, 23);                /* Schriftfarbe (braun) als RGB-Wert */
+	background-color: rgb(255, 184, 52);  /* Hintergrundfarbe der Überschrift (orange) */
+	font-size: 2.5em;                     /* Schriftgröße */
+	border: thin solid;                   /* dünner, durchgehender Rahmen */
+	font-family: "Times New Roman", Times, serif;  /* Schriftart */
+	border-radius: 0 1em 1em 1em;         /* abgerundete Ecken (oben links eckig) */
+	padding: 0.5em;                       /* Innenabstand zwischen Text und Rahmen */
+	}		
+
+	h2 { 
+	color: rgb(92, 70, 23);               /* Schriftfarbe */
+	background-color: rgb(255, 184, 52);  /* Hintergrundfarbe */
+	font-size: 1.9em;                     /* Schriftgröße (kleiner als h1) */
+	border: thin solid;                   /* Rahmen */
+	font-family: "Brush Script MT", "Brush Script Std", "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive; /* Schreibschrift */
+	}		
+	
+	li {
+    color: #8B4513;       /* Textfarbe der Listeneinträge (Hex-Wert) */
+    font-size: 1.3rem;    /* Schriftgröße der Listeneinträge */
+	}
+
+	a {
+		color: #800000;   /* Farbe der Links (dunkelrot) */
+		font-size: 1em;   /* gleiche Größe wie der umgebende Text */
+	}
+
+	p {
+		color: #8B4513;   /* Textfarbe der Absätze */
+		font-size: 1.3rem;
+	}

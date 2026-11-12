@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- Dokumenttyp: sagt dem Browser dass die Seite in HTML5 geschrieben ist -->
+
+<html lang="de">
+<!-- <html> lang="de" legt die Sprache Deutsch fest -->
+
+<head>
+<!-- <head> enthält Infos über die Seite, die nicht direkt angezeigt werden sollen -->
+    
+	<meta charset="utf-8">
+    <!-- charset="utf-8" damit Umlaute und Sonderzeichen richtig angezeigt werden -->
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Anpassung der Seite an die Bildschirmbreite -->
+    
+	<title>Unsere Preise</title>
+    <!-- <title> ist der Text im Browser-Tab -->
+
+	<link rel="stylesheet" href="formate.css">
+	<!-- <link> bindet die externe CSS-Datei ein: Das Aussehen wird für alle Seiten zentral festgelegt -->
+	
+</head>
+<body>
+<!-- <body> enthält alles, was auf der Seite sichtbar ist -->
+
+	<!-- UNGEORDNETE LISTE: <ul> erzeugt eine Liste mit Punkten,
+	     jeder Eintrag steht in einem <li> (list item).
+	     <a href="..."> erzeugt einen Link zu einer anderen Seite. -->
+	<ul>
+		<li><a href="index.html">Startseite</a></li>
+		<li><a href="inhalt.html">Bilder von unseren Produkten</a></li>	
+		<li><a tabindex="0" aria-current="page">Unsere Preise</a></li> <!-- Unsere Preise ohne href, weil man sich gerade auf dieser Seite befindet -->
+		<li><a href="kontakt.html">Kontakt und Impressum</a></li>
+	</ul>
+
+	<!-- ÜBERSCHRIFT 1. EBENE: <h1> ist die wichtigste und größte Überschrift -->
+	<h1>
+		Unsere Preise
+	</h1>
+
+	<!-- ÜBERSCHRIFT 2. EBENE: <h2> ist kleiner als <h1> -->
+	<h2>
+		Produkt und Preis
+	</h2>
+
+	<!-- GEORDNETE LISTE: <ol> (ordered list) nummeriert die Einträge automatisch (1., 2., 3.).
+	     Jeder Eintrag steht wieder in einem <li>.
+	     SONDERZEICHEN: &euro; ist die HTML-Entität für das Euro-Zeichen (€).-->
+	<ol>
+		<li>Tisch 50 &euro;</li>
+		<li>Schrank 70 &euro;</li>
+		<li>Bett 100 &euro;</li>
+	</ol>
+
+</body>
+</html>
+	

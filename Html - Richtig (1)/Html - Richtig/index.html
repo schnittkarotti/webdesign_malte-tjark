@@ -1,0 +1,118 @@
+<!doctype html>
+<!-- Dokumenttyp: sagt dem Browser dass die Seite in HTML5 geschrieben ist -->
+
+<html lang="de">
+<!-- <html> lang="de" legt die Sprache Deutsch fest -->
+
+<head>
+<!-- <head> enthält Infos über die Seite, die nicht direkt angezeigt werden sollen -->
+    
+	<meta charset="utf-8">
+    <!-- charset="utf-8" damit Umlaute und Sonderzeichen richtig angezeigt werden -->
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Anpassung der Seite an die Bildschirmbreite -->
+    
+	<title>Schreinerei Meier</title>
+    <!-- <title> ist der Text im Browser-Tab -->
+
+	<link rel="stylesheet" href="formate.css">
+	<!-- <link> bindet die externe CSS-Datei ein: Das Aussehen wird für alle Seiten zentral festgelegt -->
+	
+</head>
+<body>
+<!-- <body> enthält alles was auf der Seite sichtbar ist -->
+
+		<!-- ÜBERSCHRIFT 1. EBENE: <h1> ist die wichtigste und größte Überschrift -->
+		<h1>
+		Schreinerei Meier, ihre Werkstatt für gutes Wohnen
+		</h1>
+		
+		<!-- UNGEORDNETE LISTE: <ul> erzeugt eine Liste mit Punkten
+		     jeder Eintrag steht in einem <li> (list item).
+		     <a href="..."> erzeugt einen Link zu anderen Seite. -->
+		<ul>
+			<li><a tabindex="0" aria-current="page">Startseite</a></li>	<!-- Startseite ohne href, weil man sich gerade auf dieser Seite befindet -->
+			<li><a href="inhalt.html">Bilder von unseren Produkten</a></li>
+			<li><a href="preise.html">Unsere Preise</a></li>
+			<li><a href="kontakt.html">Kontakt und Impressum</a></li>
+		</ul>
+		
+
+		<!-- ABSATZ: <p> erzeugt einen Textabsatz -->
+		<p>
+		Willkommen bei der Schreinerei Meier im Internet!
+		</p>
+				
+		<p>
+		<!-- SONDERZEICHEN: &ndash; ist die HTML-Entität für den Gedankenstrich (–). -->
+		Wir sind seit vielen Jahren darauf spezialisiert, alle Kundenwünsche zu erfüllen. In unserer 
+		Werkstatt produzieren wir selbst &ndash; mit Holz aus regionaler, nachhaltiger Forstwirtschaft.
+		</p>
+				
+		<!-- ÜBERSCHRIFT 2. EBENE: <h2> ist kleiner als <h1> -->
+		<h2>
+		Unsere Leistungen:
+		</h2>
+
+		<!-- VERSCHACHTELTE LISTE: Die Unterliste (<ul>) steht INNERHALB des <li> -->
+		<ul>
+			<li>Möbel nach Ihren Wünschen
+				<ul>
+					<li>Küchenmöbel</li>
+					<li>Regale und Schrankwände</li>
+					<li>Badezimmermöbel</li>
+				</ul>
+			</li>
+			<li>Haustüren</li>
+			<li>Gartenzäune</li>
+			<li>Reparaturen</li>
+		</ul>
+
+		<h2>Unsere Geschichte:</h2>
+			 
+		<p>
+		Die Anfänge unserer Firma reichen bis ins Mittelalter zurück, als Horst Holzmann begann, seine
+		bisher für den Eigenbedarf hergestellten Möbel auch auf dem Markt der nächsten Stadt zu verkaufen.
+		</p>
+				
+		<p>
+		Sein Sohn führte diese Tradition fort und nach ihm noch viele weitere Kinder und Kindeskinder.
+		Heute führt Harry Meier den Betrieb in der 15. Generation und arbeitet bereits seinen Enkel als
+		Nachfolger ein.
+		</p>
+		
+
+		<!-- BILD: <img> bindet ein Bild ein.
+		     src = Pfad zur Bilddatei, alt = Ersatztext, falls das Bild nicht lädt,
+		     onclick = ruft beim Klick die JavaScript-Funktion bildGeklickt auf,
+		     style = CSS direkt am Element (Mauszeiger als Hand, Bild höchstens so breit wie die Seite) -->
+		<img src="img/image-removebg-preview.png"
+     	alt="Ein animiertes GIF"
+     	onclick="bildGeklickt(this)"
+     	style="cursor: pointer; max-width: 100%;">
+
+		<script>
+		// <script> enthält JavaScript. Die Funktion läuft, wenn auf das Bild geklickt wird.
+		function bildGeklickt(bild)
+			{
+			alert('Sägerich wurde Geklickt');   // zeigt ein Meldungsfenster
+
+			bild.src = 'img/file1.gif';          // tauscht das Bild gegen das GIF
+
+			var sound = new Audio('img/sou/ringtone_25.mp3');  // lädt die Sounddatei
+			sound.play();                                       // spielt den Sound ab
+
+			// Wenn der Sound zu Ende ist, wird wieder das ursprüngliche Bild angezeigt
+			sound.addEventListener('ended', function () {
+				bild.src = "img/image-removebg-preview.png";
+			});
+			}
+		</script>
+		
+
+		<!-- ÜBERSCHRIFT 3. EBENE: <h3>; style="color:..." färbt den Text lila (CSS direkt am Element) -->
+		<h3 style="color:#7B68EE;">Sägerich: hallllo</h3>
+
+  </body>
+</html>
