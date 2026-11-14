@@ -1,13 +1,20 @@
 <!doctype html>
+<!-- Sagt dem Browser: Das ist eine HTML5-Seite -->
 <html lang="de">
+<!-- Sprache der Seite: Deutsch -->
 <head>
 	<meta charset="utf-8">
+	<!-- Zeichensatz, damit Umlaute richtig angezeigt werden -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Seite passt sich der Bildschirmgröße an (z. B. Handy) -->
 	<title>Unsere Preise</title>
+	<!-- Titel im Browser-Tab -->
 	<style>
 
+	/* Hintergrund der ganzen Seite */
 	body {background-color:mistyrose;}
 	
+	/* Hauptüberschrift: Rahmen, runde Ecken, weißer Hintergrund */
 	h1 {border: thin solid;                   
 	border-radius: 0 1em 1em 1em;         
 	padding: 0.5em;  
@@ -15,32 +22,41 @@
 	background-color:white;  
 	font-size: 2.5em;}		
 
+	/* Unterüberschriften */
 	h2 {font-size: 1.9em;                   
 	border: thin solid;      
 	color:hotpink;              
 	background-color:white;}		
 	
+	/* Listenpunkte */
 	Li {font-size: 1.3em;
 		color:black;}
 
+	/* Absätze */
  	p {color:black; 
 		font-size: 1.3rem;}
 
 	</style>
 </head>
 <body>
+	<!-- Ab hier beginnt der sichtbare Teil -->
 
+	<!-- Menü mit Links zu den anderen Seiten -->
 	<ul>
 		<li><a href="index.html">Startseite</a></li>
 		<li><a href="inhalt.html">Bilder von unseren Produkten</a></li>	
+		<!-- Aktuelle Seite (kein Link) -->
 		<li><a tabindex="0" aria-current="page">Unsere Preise</a></li>
 		<li><a href="kontakt.html">Kontakt und Impressum</a></li>
 	</ul>
 
+	<!-- Überschrift der Seite -->
 	<h1>Unsere Preise</h1>
 
+	<!-- Unterüberschrift der Preisliste -->
 	<h2>Produkt und Preis</h2>
 
+	<!-- Nummerierte Liste (1., 2., 3.) mit Produkten und Preisen -->
 	<ol>
 		<li>Tisch 50€;</li>
 		<li>Schrank 70€;</li>

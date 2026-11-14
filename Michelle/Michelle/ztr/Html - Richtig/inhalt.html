@@ -1,13 +1,20 @@
 <!doctype html>
+<!-- Sagt dem Browser: Das ist eine HTML5-Seite -->
 <html lang="de">
+<!-- Sprache der Seite: Deutsch -->
 <head>
 	<meta charset="utf-8">
+	<!-- Zeichensatz, damit Umlaute richtig angezeigt werden -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Seite passt sich der Bildschirmgröße an (z. B. Handy) -->
 	<title>Bilder von unseren Produkten</title>
+	<!-- Titel im Browser-Tab -->
 	<style>
 
+	/* Hintergrund der ganzen Seite */
 	body {background-color:mistyrose;}
 	
+	/* Hauptüberschrift: Rahmen, runde Ecken, weißer Hintergrund */
 	h1 {border: thin solid;                   
 	border-radius: 0 1em 1em 1em;         
 	padding: 0.5em;  
@@ -15,14 +22,17 @@
 	background-color:white;  
 	font-size: 2.5em;}		
 
+	/* Unterüberschriften */
 	h2 {font-size: 1.9em;                   
 	border: thin solid;      
 	color:hotpink;              
 	background-color:white;}		
 	
+	/* Listenpunkte */
 	Li {font-size: 1.3em;
 		color:black;}
 
+	/* Absätze */
  	p {color:black; 
 		font-size: 1.3rem;}
 
@@ -31,24 +41,29 @@
 </head>
 
 <body>
+	<!-- Ab hier beginnt der sichtbare Teil -->
 
+	<!-- Menü mit Links zu den anderen Seiten -->
 	<ul>
 		<li><a href="index.html">Startseite</a></li>
+		<!-- Aktuelle Seite (kein Link) -->
 		<li><a tabindex="0" aria-current="page">Bilder von unseren Produkten</a></li>
 		<li><a href="preise.html">Unsere Preise</a></li>
 		<li><a href="kontakt.html">Kontakt und Impressum</a></li>
 	</ul>
 
-	
+	<!-- Überschrift der Seite -->
 	<h1>Unsere Produkte</h1>
 
-	
+	<!-- Einleitungstext -->
 	<p>Hier sehen Sie einen Überblick über unsere Angebote:</p>
 
+	<!-- Produktbilder (kleine: 200x200) -->
 	<img src="img/cabinet.svg" alt="Kommode" width="200" height="200">
 	<img src="img/dresser.svg" alt="Kommode mit Schubladen" width="200" height="200">
 	<img src="img/filing-cabinet.svg" alt="Aktenschrank" width="200" height="200">
 	<img src="img/table.svg" alt="Schreibtisch" width="200" height="200">
+	<!-- Produktbilder (große: 500x500) -->
 	<img src="img/cupboard.svg" alt="Schrank" width="500" height="500">
 	<img src="img/bed-modern.svg" alt="Modernes Bett für 2 Personen" width="500" height="500">
 	<img src="img/chair.svg" alt="Stuhl aus Vollholz" width="500" height="500">
