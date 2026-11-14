@@ -6,76 +6,108 @@
     <title>Unsere Preise</title>
     <style>
 
-	body {
-	background-image: url(img/istockphoto-1417433518-612x612.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    /* Grundlayout und Hintergrundbild der Preisseite */
+body {
+		background-image: linear-gradient(rgba(255, 250, 240, 0.8), rgba(255, 250, 240, 0.75)),
+			url(img/istockphoto-1417433518-612x612.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+		font-family: Arial, sans-serif;
+		color: #2b2b2b;
+		margin: 0;
+		padding: 0 1rem 2rem;
 	}
 	
-	h1 { 
-	color:rgb(92, 70, 23);
-	background-color: rgb(255, 184, 52);
-	font-size: 2.5em;
-	border: thin solid;
-	border-radius: 0 1em 1em 1em;
-	padding: 0.5em;
-	}	
+	/* Navigationsleiste mit gelbem, orangefarbenem und teal-Farbverlauf */
+	ul1 {
+		list-style-type: none;
+		margin: 0 0 1.5rem;
+		padding: 0;
+		overflow: hidden;
+		background: linear-gradient(90deg, #f4c95d, #f28c28, #1d8f8b);
+		justify-content: center;
+		display: flex;
+		column-gap: 20px;
+		font-size: 1.5em;
+		border-radius: 0 0 1rem 1rem;
+		box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+	}
 
-	h2 { 
-	color: rgb(92, 70, 23);
-	background-color: rgb(255, 184, 52);
-	font-size: 1.9em;
-	border: thin solid;
-	}		
+	ul1 li {
+		float: left;
+	}
+
+	ul1 li a {
+		display: block;
+		color: #ffffff;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+	/* Überschrift der Preisübersicht */
+	h1 {
+		color: #2b2b2b;
+		background: linear-gradient(90deg, #f4c95d, #f28c28);
+		font-size: 2.5em;
+		border: 2px solid #1d8f8b;
+		border-radius: 0 1em 1em 1em;
+		padding: 0.7em 1em;
+		margin: 1rem 0;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+	}
+
+	/* Überschriften und Listenformatierung */
+	h2 {
+		color: #ffffff;
+		background: linear-gradient(90deg, #1d8f8b, #f28c28);
+		font-size: 1.9em;
+		border: 2px solid #f4c95d;
+		padding: 0.5em 0.8em;
+		border-radius: 0.8rem;
+		box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+	}
 	
 	li {
-    color: #8B4513;
-    font-size: 1.3rem;
+		color: #5d3b1c;
+		font-size: 1.3rem;
 	}
-
-	li {
-    color: #8B4513;
-    font-size: 1.3rem;
-	}
-    ul1 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(255, 184, 52);
-    justify-content: center;
-    display: flex;
-    column-gap: 20px;
-    font-size: 1.5em;
-    }
-
-    ul li {
-    float: left;
-    }
-
-    ul li a {
-    display: block;
-    color: rgb(2, 2, 2);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    }
 
 	a {
-		color: #800000;
+		color: #1d8f8b;
 		font-size: 1em;
 	}
 
 	p {
-		color: #8B4513;
+		color: #5d3b1c;
 		font-size: 1.3rem;
+		line-height: 1.6;
+		background: rgba(255, 250, 240, 0.75);
+		padding: 0.6rem 0.8rem;
+		border-radius: 0.5rem;
 	}
+
+    /* Preisübersicht als nummerierte Liste mit markanter Gestaltung */
+    ol {
+        		color: #ffffff;
+		background: linear-gradient(90deg, #1d8f8b, #f28c28);
+		font-size: 1.9em;
+		border: 2px solid #f4c95d;
+		padding: 1em 1.5em;
+		border-radius: 0.8rem;
+		box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    }
+    
 	</style>
 </head>
 <body>
+        <!-- Überschrift der Preise-Seite -->
         <h1>
         Unsere Preise
     </h1>
+
+    <!-- Navigationsleiste zwischen den Seiten -->
     <ul1>
         <li><a href="index.html">Startseite</a></li>
         <li><a href="inhalt.html">Bilder von unseren Produkten</a></li>
@@ -84,6 +116,7 @@
 
 
 
+    <!-- Preisübersicht für die wichtigsten Produktgruppen -->
     <ol>
         <li>Kommodenpreise auf Anfrage</li>
         <li>Tischpreise auf Anfrage</li>

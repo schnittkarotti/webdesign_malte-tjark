@@ -5,90 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schreinerei Meier</title>
 	<style>
-
+	/* Grundlayout der Seite: Hintergrundbild, allgemeine Schrift und Abstände */
 	body {
-	background-image: url(img/istockphoto-1417433518-612x612.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+		background-image: linear-gradient(rgba(255, 250, 240, 0.8), rgba(255, 250, 240, 0.75)),
+			url(img/istockphoto-1417433518-612x612.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+		font-family: Arial, sans-serif;
+		color: #2b2b2b;
+		margin: 0;
+		padding: 0 1rem 2rem;
 	}
 	
-	    ul1 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(255, 184, 52);
-    justify-content: center;
-    display: flex;
-	column-gap: 20px;
-    font-size: 1.5em;
-    }
+	/* Navigationsleiste mit gelb-orange-teal-Gradient */
+	ul1 {
+		list-style-type: none;
+		margin: 0 0 1.5rem;
+		padding: 0;
+		overflow: hidden;
+		background: linear-gradient(90deg, #f4c95d, #f28c28, #1d8f8b);
+		justify-content: center;
+		display: flex;
+		column-gap: 20px;
+		font-size: 1.5em;
+		border-radius: 0 0 1rem 1rem;
+		box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+	}
 
-    ul1 li {
-    float: left;
-    }
+	ul1 li {
+		float: left;
+	}
 
-    ul1 li a {
-    display: block;
-    color: rgb(2, 2, 2);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    }
+	ul1 li a {
+		display: block;
+		color: #ffffff;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-weight: bold;
+	}
 
-	h1 { 
-	color:rgb(92, 70, 23);
-	background-color: rgb(255, 184, 52);
-	font-size: 2.5em;
-	border: thin solid;
-	border-radius: 0 1em 1em 1em;
-	padding: 0.5em;
-	}		
+	/* Überschrift der Startseite */
+	h1 {
+		color: #2b2b2b;
+		background: linear-gradient(90deg, #f4c95d, #f28c28);
+		font-size: 2.5em;
+		border: 2px solid #1d8f8b;
+		border-radius: 0 1em 1em 1em;
+		padding: 0.7em 1em;
+		margin: 1rem 0;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+	}
 
-	h2 { 
-	color: rgb(92, 70, 23);
-	background-color: rgb(255, 184, 52);
-	font-size: 1.9em;
-	border: thin solid;
-	}		
+	/* Bereichsüberschriften */
+	h2 {
+		color: #ffffff;
+		background: linear-gradient(90deg, #1d8f8b, #f28c28);
+		font-size: 1.9em;
+		border: 2px solid #f4c95d;
+		padding: 0.5em 0.8em;
+		border-radius: 0.8rem;
+		box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+	}
 	
+	/* Listen und Fließtext */
 	li {
-    color: #8B4513;
-    font-size: 1.3rem;
+		color: #5d3b1c;
+		font-size: 1.3rem;
 	}
 
 	a {
-		color: #800000;
+		color: #1d8f8b;
 		font-size: 1em;
 	}
 
 	p {
-		color: #8B4513;
+		color: #5d3b1c;
 		font-size: 1.3rem;
+		line-height: 1.6;
+		background: rgba(255, 250, 240, 0.75);
+		padding: 0.6rem 0.8rem;
+		border-radius: 0.5rem;
 	}
 	</style>
 </head>
 <body>
 
+        <!-- Hauptüberschrift der Website -->
         <h1>
         Schreinerei Meier, ihre Werkstatt für gutes Wohnen
         </h1>
 
+        <!-- Navigation zwischen den wichtigsten Seiten -->
         <ul1>
             <li><a href="index">Startseite</a></li>
             <li><a href="inhalt.html">Bilder von unseren Produkten</a></li>
             <li><a href="preise.html">Unsere Preise</a></li>
         </ul1>
 
+        <!-- Begrüßungstext auf der Startseite -->
         <p>
         Willkommen bei der Schreinerei Meier im Internet!
         </p>
 
+        <!-- Unternehmensbeschreibung -->
         <p>
         Wir sind seit vielen Jahren darauf spezialisiert, alle Kundenwünsche zu erfüllen. In unserer
         Werkstatt produzieren wir selbst & mit Holz aus regionaler, nachhaltiger Forstwirtschaft.
         </p>
 
+        <!-- Abschnitt mit den angebotenen Leistungen -->
         <h2>
         Unsere Leistungen:
         </h2>
@@ -106,6 +132,7 @@
             <li>Reparaturen</li>
         </ul>
 
+        <!-- Abschnitt über die Firmengeschichte -->
         <h2>Unsere Geschichte:</h2>
 
         <p>
