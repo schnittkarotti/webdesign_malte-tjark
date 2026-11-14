@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="480" height="480">
+<title>Chair</title>
+<desc>Source: https://commons.wikimedia.org/wiki/File:Furniture_template.svg</desc>
+  <defs>
+  <style type="text/css">
+  #top {
+	fill: steelblue;
+  }
+  </style>
+    <linearGradient id="blue">
+      <stop offset="0" stop-color="steelblue"/>
+      <stop offset="0.5" stop-color="steelblue"/>	  
+      <stop offset="1" stop-color="lightblue"/>
+    </linearGradient>
+    <linearGradient id="a">
+		<stop stop-color="#ffe091" offset="0"/>
+		<stop stop-color="#ff6d00" offset="1"/>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="f" x1="280.7" x2="286.2" y1="644.5" y2="609.2" gradientUnits="userSpaceOnUse"/>
+    <linearGradient xlink:href="#a" id="g" x1="382" x2="376.7" y1="621.2" y2="602" gradientUnits="userSpaceOnUse"/>
+    <linearGradient xlink:href="#a" id="h" x1="263.9" x2="259.4" y1="571.2" y2="492.9" gradientUnits="userSpaceOnUse"/>
+    <linearGradient xlink:href="#a" id="i" x1="338.9" x2="344.9" y1="557" y2="486.4" gradientUnits="userSpaceOnUse"/>
+    <linearGradient xlink:href="#a" id="j" x1="244" x2="321.9" y1="493" y2="487.4" gradientUnits="userSpaceOnUse" spreadMethod="reflect"/>
+    <linearGradient xlink:href="#blue" id="seatshadow" x1="273" x2="289" y1="600" y2="574" 
+	gradientUnits="userSpaceOnUse"/>
+    <linearGradient xlink:href="#blue" id="l" x1="328.1" x2="332.1" y1="588.5" y2="607.5" gradientUnits="userSpaceOnUse"/>
+ </defs>
+
+  <g stroke="#994101" transform="matrix(-1.68 0 0 1.68 774.6 -784.9)">
+    <path fill="url(#f)" d="m277.2 714.6 11.4 1.8c5-70.7-3.3-111.2 14.3-113.3l-13.6-2.1c-15.9 2.8-9.1 47.9-12.1 113.6z"/>
+    <path fill="url(#g)" d="m375.9 703.6 8.3-8.9c4.3-88.5 8.5-100.2-16.3-100.2l-11.1 3.9c29.5 1.2 19.9 19.1 19.1 105.2z"/>
+    <path fill="#ff6d00" d="m332.1 646.6 9.7.8v-49.7l-10 .4.3 48.5zm-88.2 16.1 7.9-6.4 16.4-76.8-2.1-7.9c-8.5.2-6.5 14-22.2 91.1z"/>
+    <path fill="url(#h)" d="m262.6 572.3-10.8-70 11.6-2L273 569l-10.4 3.3z"/>
+    <path fill="url(#i)" d="m331.3 560.9 5.1-64.6 13.6.5-5.8 66.4-12.9-2.3z"/>
+    <path fill="url(#j)" d="M244.5 479.1c-2.2 3.5-.6 22 3.3 25.5 5 4.5 21.3-.4 58.5-2.3 30.1-1.5 46.6 2 50.8-3.3 2.9-3.5 4.8-22.5 1.5-24.5-4.5-2.8-38.8-1-57.5-.4-19.7.6-54.2 1.2-56.6 5z"/>
+  </g>
+  <g id="seat" transform="matrix(-1.68 0 0 1.68 774.6 -784.9)">
+    <path fill="url(#seatshadow)" d="M374.6 578c8.9 2.5 7 11.2 6.5 13.8-2 10.8-71.1 17.3-90.7 14.3-11-1.7-29.1-16.4-29.3-24.7-4.1-21.8 26-16.8 39.9-15"/>
+    <path id="top" d="M262.5 570.2c10.5-12.4 52.7-14.9 76.1-12.1 14.4 1.7 42.2 17.9 42.5 25.7.4 11-71.1 17.3-90.7 14.3-12.5-1.9-33.8-20.9-27.9-27.9z"/>
+  </g>
+</svg>
